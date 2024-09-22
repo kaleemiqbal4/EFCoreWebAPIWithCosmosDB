@@ -18,18 +18,26 @@ public class ProductManager : IProductManager
     {
         ProductEntity pe = new ProductEntity
         {
-            Id = "1",
+            Id = "2",
             Name = request.Name,
             Price = request.Price,
             Description = request.Description,
         };
-       var result =  await productRepository.AddAsync(pe);
+        var result = await productRepository.AddAsync(pe);
         return 1;
     }
 
-    public async Task<ProductResponse> ProductListAsync()
+    public async Task<List<ProductResponse>> ProductListAsync()
     {
-        await Task.CompletedTask;
-        return default;
+        var result = await productRepository.GetAllAsync();
+        var products = new List<ProductResponse>();
+        result.ToList().ForEach(p => products.Add(new ProductResponse()
+        {
+            Id = p.Id,
+            Name = p.Name,
+            Price = p.Price,
+            Description = p.Description
+        }));
+        return products;
     }
 }

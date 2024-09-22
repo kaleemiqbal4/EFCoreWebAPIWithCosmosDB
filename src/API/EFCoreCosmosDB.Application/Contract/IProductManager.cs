@@ -7,5 +7,5 @@ public interface IProductManager
 {
     Task<int> CreateProductAsync(ProductRequest request);
 
-    Task<ProductResponse> ProductListAsync();
+    Task<List<ProductResponse>> ProductListAsync();
 }

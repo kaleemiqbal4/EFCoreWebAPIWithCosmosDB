@@ -26,7 +26,7 @@ public class UsersController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetUsersAsync()
     {
-        await Task.CompletedTask;
-        return Ok("Users has been called");
+        var response = await userManager.UsersListAsync();
+        return Ok(response);
     }
 }

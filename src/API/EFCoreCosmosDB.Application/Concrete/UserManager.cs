@@ -2,7 +2,6 @@
 using EFCoreCosmosDB.Entity.Entity;
 using EFCoreCosmosDB.Entity.Reponse;
 using EFCoreCosmosDB.Entity.Request;
-using EFCoreCosmosDB.Repository.Integration.Concrete;
 using EFCoreCosmosDB.Repository.Integration.Contract;
 using Microsoft.Extensions.Logging;
 
@@ -17,21 +16,28 @@ public class UserManager : IUserManager
 
     public async Task<int> CreateUserAsync(UserRequest request)
     {
-        //var entity = new UserEntity()
-        //{
-        //    Name = request.Name,
-        //    Email = request.Email
-        //};
+        var entity = new UserEntity()
+        {
+            Id = "1",
+            Name = request.Name,
+            Email = request.Email
+        };
 
-        //await userRepository.AddAsync(entity);
-        await Task.CompletedTask;
+        await userRepository.AddAsync(entity);
         return 1;
     }
 
-    public async Task<UserResponse> UsersListAsync()
+    public async Task<List<UserResponse>> UsersListAsync()
     {
-        // var result = userRepository.GetAllAsync();
-        await Task.CompletedTask;
-        return default;
+        var result = await userRepository.GetAllAsync();
+        var users = new List<UserResponse>();
+        result.ToList().ForEach(u => users.Add(new UserResponse()
+        {
+            Id = u.Id,
+            Name = u.Name,
+            Email = u.Email
+        }));
+
+        return users;
     }
 }

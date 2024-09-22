@@ -7,5 +7,5 @@ public interface IUserManager
 {
    Task<int> CreateUserAsync(UserRequest request);
 
-    Task<UserResponse> UsersListAsync();
+    Task<List<UserResponse>> UsersListAsync();
 }
