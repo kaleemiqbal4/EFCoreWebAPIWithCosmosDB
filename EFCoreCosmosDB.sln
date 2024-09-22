@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{1452B284-B3CB-431B-82BE-E0BA6DD67240}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreCosmosDB.API", "src\API\EFCoreCosmosDB.API\EFCoreCosmosDB.API.csproj", "{3AC45A19-B9DE-4E69-9D40-21B20F20A4C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreCosmosDB.Entity", "src\API\EFCoreCosmosDB.Entity\EFCoreCosmosDB.Entity.csproj", "{1E7BB949-0B69-46BC-875A-F03D8AE87E4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreCosmosDB.Application", "src\API\EFCoreCosmosDB.Application\EFCoreCosmosDB.Application.csproj", "{E4FE3E1C-F3A4-43E7-B8E4-4DE93ED702B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreCosmosDB.Repository", "src\API\EFCoreCosmosDB.Repository\EFCoreCosmosDB.Repository.csproj", "{FF7FB187-8E4D-4864-BD01-1468D94DA2D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreCosmosDB.Core", "src\API\EFCoreCosmosDB.Core\EFCoreCosmosDB.Core.csproj", "{0A156CE6-24FA-4380-99E2-1CA54537AE92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AC45A19-B9DE-4E69-9D40-21B20F20A4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC45A19-B9DE-4E69-9D40-21B20F20A4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC45A19-B9DE-4E69-9D40-21B20F20A4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC45A19-B9DE-4E69-9D40-21B20F20A4C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7BB949-0B69-46BC-875A-F03D8AE87E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7BB949-0B69-46BC-875A-F03D8AE87E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7BB949-0B69-46BC-875A-F03D8AE87E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7BB949-0B69-46BC-875A-F03D8AE87E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FE3E1C-F3A4-43E7-B8E4-4DE93ED702B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FE3E1C-F3A4-43E7-B8E4-4DE93ED702B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FE3E1C-F3A4-43E7-B8E4-4DE93ED702B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FE3E1C-F3A4-43E7-B8E4-4DE93ED702B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7FB187-8E4D-4864-BD01-1468D94DA2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7FB187-8E4D-4864-BD01-1468D94DA2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7FB187-8E4D-4864-BD01-1468D94DA2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7FB187-8E4D-4864-BD01-1468D94DA2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A156CE6-24FA-4380-99E2-1CA54537AE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A156CE6-24FA-4380-99E2-1CA54537AE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A156CE6-24FA-4380-99E2-1CA54537AE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A156CE6-24FA-4380-99E2-1CA54537AE92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3AC45A19-B9DE-4E69-9D40-21B20F20A4C0} = {1452B284-B3CB-431B-82BE-E0BA6DD67240}
+		{1E7BB949-0B69-46BC-875A-F03D8AE87E4C} = {1452B284-B3CB-431B-82BE-E0BA6DD67240}
+		{E4FE3E1C-F3A4-43E7-B8E4-4DE93ED702B5} = {1452B284-B3CB-431B-82BE-E0BA6DD67240}
+		{FF7FB187-8E4D-4864-BD01-1468D94DA2D4} = {1452B284-B3CB-431B-82BE-E0BA6DD67240}
+		{0A156CE6-24FA-4380-99E2-1CA54537AE92} = {1452B284-B3CB-431B-82BE-E0BA6DD67240}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6954D833-3150-4D36-A054-9154220443A2}
+	EndGlobalSection
+EndGlobal
